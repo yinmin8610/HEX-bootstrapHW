@@ -1,0 +1,16 @@
+.header {
+  position: relative;
+}
+
+.header .header-img {
+  height: 496px;
+}
+
+.header .header-card {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  height: 256px;
+  width: 100%;
+}
+/*# sourceMappingURL=header.css.map */

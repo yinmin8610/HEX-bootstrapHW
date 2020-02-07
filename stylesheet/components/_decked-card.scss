@@ -1,0 +1,39 @@
+.decked-card{
+.decked-header{
+   background-color:$primary;
+   color: $accent;
+}
+ .decked-body{
+    background-color: white;
+    color: $accent;
+    .decked-title{
+      background-color: $primary;
+      padding-top:20px;
+      padding-bottom:20px;
+      @include media-breakpoint-up(md) {
+         background-color: $accent;
+         padding-top:0;
+         padding-bottom:0;
+      }
+    }
+    hr{
+       border-color: white;
+    }
+    padding-top:15px;
+      padding-bottom:15px;
+    @include media-breakpoint-up(md) {
+      background-color: $accent;
+      color: white;
+      hr{
+         border-color: white;
+      }
+    }
+ }
+ .decked-footer{
+  background-color: $contrast;
+  color:$primary;
+  a{
+     color:$accent;
+  }
+ }
+}

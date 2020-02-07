@@ -1,0 +1,19 @@
+.section{
+  .sec-img{
+    min-height: 250px;
+    @include media-breakpoint-up(md) {
+      margin-left: -15px;
+      margin-right: -15px;
+      margin-top: -24px;
+      margin-bottom: -24px;
+    }
+  }
+  .sec-content{
+    line-height: 2;
+    @include media-breakpoint-up(md) {
+      line-height: 2.5;
+      writing-mode: vertical-rl;
+    }   
+    max-height: 420px;
+  }
+}

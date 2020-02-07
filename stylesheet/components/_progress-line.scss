@@ -1,0 +1,45 @@
+.process-line {
+  $circle-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  .progress-pointer {
+    height: $circle-size;
+    width: $circle-size;
+    border: 1px solid $white;
+    border-radius: $circle-size;
+    position: relative;
+    background-color: $primary;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: $primary;
+  }
+
+  .progress-pointer.active {
+    border-color: $white;
+    &:after {
+      content: "";
+      height: $circle-size - 6;
+      width: $circle-size - 6;
+      display: block;
+      background-color: $white;
+      border-radius: $circle-size;
+    }
+  }
+  .progress-pointer.completed {
+    font-size: 1rem;
+    background-color: $white;
+    color: theme-color('primary');
+  }
+
+}

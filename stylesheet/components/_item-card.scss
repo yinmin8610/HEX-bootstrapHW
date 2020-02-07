@@ -1,0 +1,36 @@
+.item-card {
+  margin-bottom: 20px;
+
+  .item-card-body {
+    position: relative;
+
+    .card-tag {
+      position: absolute;
+      left: 20px;
+      top: 0;
+      padding:6px;
+      writing-mode: vertical-lr;
+      letter-spacing: 5px;
+      color:#eab2c8;
+      background-color: $contrast;
+    }
+
+    .card-select {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      cursor: pointer;
+    }
+
+    .card-image {
+      height: 315px;
+    }
+  }
+
+  .item-card-footer {
+    .card-btn {
+      border: 1px solid $primary;
+    }
+
+  }
+}

@@ -1,0 +1,11 @@
+.bg-cover {
+  background-size: cover;
+  background-position: center center;
+}
+
+.vertical-content {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+/*# sourceMappingURL=utilities.css.map */
