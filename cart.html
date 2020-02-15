@@ -48,28 +48,21 @@
           <div class="cart">
             <h1 class="bg-primary text-accent text-center py-4 mb-5 h4">您的購物車</h1>
             <div class="cart-list text-accent d-flex flex-column flex-md-row">
-              <div class="d-flex align-items-md-center flex-grow-1">
+              <div class="d-flex align-items-md-center flex-grow-1 mr-md-3">
                 <div class="bg-cover mr-3"
                   style="width:110px; height:100px; background-image: url(https://images.unsplash.com/photo-1511401139252-f158d3209c17?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80)">
                 </div>
                 <div class="d-flex flex-column flex-md-row flex-md-grow-1">
-                  <div><span class="h5">抹茶馬卡龍</span><br><span>NT$ 450</span></div>
-                  <!-- <div class="input-group">
-                    <div class="input-group-prepend">
-                      <button type="button" class="btn btn-brand-light text-primary-light material-icons text-base-size">remove</button>                  
-                      <input type="text" class="form-control" value="2">
-                      <button type="button" class="btn btn-brand-light text-primary-light material-icons text-base-size">add</button>
-                    </div>
-                  </div> -->
-                  <div class="input-group carts-input-group">
+                  <div class=""><span class="h5">抹茶馬卡龍</span><br><span>NT$ 450</span></div>
+                  <div class="input-group carts-input-group w-25 ml-md-auto">
                     <div class="input-group-prepend">
                       <button type="button"
-                        class="btn btn-brand-light text-primary-light material-icons text-base-size">-</button>
+                        class="btn btn-outline-primary">-</button>
                     </div>
-                    <input type="text" class="form-control" value="2">
+                    <input type="text" class="form-control form-control-lg h-100" value="2">
                     <div class="input-group-append">
                       <button type="button"
-                        class="btn btn-brand-light text-primary-light material-icons text-base-size">+</button>
+                        class="btn btn-outline-primary">+</button>
                     </div>
                   </div>
                 </div>
@@ -114,18 +107,19 @@
   <section class="bg-accent p-4">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-5 mr-auto mb-3 mb-md-0 d-flex align-items-center justify-content-center justify-content-md-start">
-          <img src="./img/logo-light.svg" alt="" width="40">
-          <span class="mx-3  text-white h4">訂閱你我的甜蜜郵件</span>
+        <div class="col-md-5 d-flex align-items-center justify-content-center justify-content-md-start mb-4 mb-md-0">
+          <span class="text-white h4 mb-0">訂閱你我的甜蜜郵件</span>
         </div>
         <div class="col-md-5">
-          <div class="input-group mb-0 input-group-lg">
-            <div class="input-group-prepend">
-              <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-              <input type="text" class="form-control form-control-lg">
-            </div>
-            <div class="input-group-append">
-              <button class="btn btn-contrast text-accent" type="button"><i class="fas fa-arrow-right"></i></button>
+          <div class="form-group mb-0">
+            <div class="input-group input-group-lg">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+              </div>
+              <input type="email" class="form-control" aria-label="Text input with segmented dropdown button">
+              <div class="input-group-append">
+                <button class="btn btn-contrast text-accent" type="button"><i class="fas fa-arrow-right"></i></button>
+              </div>
             </div>
           </div>
         </div>
